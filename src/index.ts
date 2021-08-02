@@ -7,4 +7,3 @@ let item2: TodoItem = new TodoItem(2, "Order Apple", false);
 
 item1.printDetails();
 item2.printDetails();
-
