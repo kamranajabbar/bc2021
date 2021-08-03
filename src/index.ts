@@ -8,7 +8,7 @@
 // item1.printDetails();
 // item2.printDetails();
 
-
+// itemCollection //
 import { ItemCollection } from "./itemCollection";
 
 console.clear();
