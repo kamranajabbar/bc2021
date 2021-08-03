@@ -13,7 +13,7 @@ import { ItemCollection } from "./itemCollection";
 
 console.clear();
 
-let col1: ItemCollection = new ItemCollection();
+let col1:ItemCollection = new ItemCollection();
 
 col1.addTodo("Puchase Mango");
 col1.addTodo("Eat Biryani");
