@@ -1,6 +1,7 @@
 import { TodoItem } from "./todoItem";
 import { TodoCollection } from "./todoCollection";
 import * as inquirer from 'inquirer';
+import { JsonTodoCollection } from "./jsonTodoCollection";
 
 let todos: TodoItem[] = [
     new TodoItem(1, "Buy Flowers"), 
@@ -9,15 +10,8 @@ let todos: TodoItem[] = [
     new TodoItem(4, "Call Kamran", true)
 ];
 
-let collection: TodoCollection = new TodoCollection("Yahya", todos);
+let collection: TodoCollection = new JsonTodoCollection("Yahya", todos);
 let showCompleted = true;
-
-function displayTodoList(): void {
-    console.log(`${collection.username}'s Todo List` + ` (${ collection.getItemCounts().incomplete } items to do)`);
-
-    //console.log(`ID \t Task Name \t Status`);
-    collection.getTodoItems(showCompleted).forEach( (item) => item.printDetails() );
-}
 
 enum Commands {
     Add = "Add New Task",
@@ -25,6 +19,13 @@ enum Commands {
     Toggle = "Show/Hide Completed",
     Purge = "Remove Completed Tasks",
     Quit = "Quit"
+}
+
+function displayTodoList(): void {
+    console.log(`${collection.username}'s Todo List` + ` (${ collection.getItemCounts().incomplete } items to do)`);
+
+    //console.log(`ID \t Task Name \t Status`);
+    collection.getTodoItems(showCompleted).forEach( (item) => item.printDetails() );
 }
 
 function promptAdd(): void {
