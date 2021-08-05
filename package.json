@@ -1,0 +1,18 @@
+{
+  "name": "@kamranajabbar/class_06",
+  "version": "1.0.0",
+  "description": "NPM Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NPM",
+    "Package"
+  ],
+  "author": "Kamran Jabbar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.4.12"
+  }
+}
