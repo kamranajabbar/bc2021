@@ -1,6 +1,6 @@
 {
   "name": "@kamranajabbar/class_06",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "NPM Package",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,12 @@
   },
   "keywords": [
     "NPM",
-    "Package"
+    "Package",
+    "Class 06",
+    "Bootcamp 2021",
+    "Kamran Jabbar",
+    "Node.js",
+    "Typescript"
   ],
   "author": "Kamran Jabbar",
   "license": "ISC",
